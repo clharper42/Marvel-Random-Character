@@ -1,0 +1,204 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    overflow: hidden;
+}
+
+body {
+    position: relative;
+
+    padding: 0;
+    margin: 0;
+    color: white;
+    background: linear-gradient(to bottom, #e23636, #000000);
+}
+
+.container div {
+    border-radius: 25px;
+}
+
+a {
+    font-weight: bold;
+    color: #ed490a;
+    text-shadow: 1px 1px black;
+}
+
+button{
+    display:inline-block;
+    /* padding:0.46em 1.6em; */
+    padding: .8em;
+    border:0.1em solid #000000;
+    border-radius: 25px;
+    /* margin:0 0.2em 0.2em 0; */
+    /* border-radius:0.12em; */
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font-weight:300;
+    color:#FFFFFF;
+    text-shadow: 0 0.04em 0.04em rgba(0, 0, 0, 0.75);
+    background:rgba(0, 0, 0, 0.0);
+    text-align: center;
+    transition: all 0.15s;
+}
+
+button:hover{
+    text-shadow: 0 0 2em rgba(255, 255, 255, 0.75);
+    color:#FFFFFF;
+    border-color:#FFFFFF;
+}
+
+button:focus {
+    outline: none;
+}
+
+.container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    display: grid;
+    min-height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.back {
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -3;
+    background: linear-gradient(to bottom, #e23636, #000000);
+    /* background: linear-gradient(to bottom, rgba(7,14,11,1.0), rgba(72,44,93,1.0)); */
+    transition: opacity 1.5s linear;
+}
+
+.info-container {
+    display: grid;
+    grid-template-columns: 500px 500px;
+    grid-template-rows: 500px;
+    column-gap: 20px;
+    justify-content: center;
+    align-content: center;
+}
+
+.description-container {
+    text-align: center;
+    line-height: 2em;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 50% 1fr;
+    gap: 1px 1px;
+}
+
+.description-container h1 {
+    padding-right: 1px;
+    padding-bottom: 6px;
+    font-weight: bold;
+    font-size: 35px;
+    text-shadow: 2px 2px black;
+}
+
+.description-container p {
+    font-weight: 300;
+    font-size: 20px;
+    text-shadow: 2px 2px black;
+}
+
+.about-container, .name-container, .more-comics-container, .wiki-container, .btn-container, .title-container, .pic-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pic-container img{
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+    display: block;
+}
+
+.get-more-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.comics-container {
+    display: grid;
+    grid-template-columns: 85%;
+    grid-template-rows: 275px 275px;
+    row-gap: 30px;
+    justify-content: center;
+    align-content: center;
+}
+
+.ind-comics-container, .events-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 15% 1fr;
+}
+
+.title-container
+{
+    grid-column: 1 / span 4;
+}
+
+.title-container h2 {
+    text-shadow: 2px 2px black;
+    width: auto;
+    height: auto;
+    padding: 1px;
+}
+
+.comic-container {
+    text-align: center;
+}
+
+.comic-container img {
+    max-width: 75%;
+    max-height: 75%;
+    margin: auto;
+    margin-top: 10px;
+    display: block;
+}
+
+.comic-container h2 {
+    margin-top: 10px;
+    font-size: 15;
+}
+
+.info-container > div, .comics-container > div {
+    background-color: rgba(255, 255, 255, .10);
+    box-shadow: 3px 3px 5px 6px rgba(0, 0, 0, 0.2)
+}
+
+.btn-container {
+    position: relative;
+}
+
+.btn-back-one {
+    opacity: 1;
+    position: absolute;
+    border-radius: 25px;
+    width: 132.66px;
+    height: 40.31;
+    z-index: -1;
+    background: linear-gradient(to bottom, #e23636, #000000);
+    /* transition: opacity 1.5s linear; */
+    transition: opacity .5s linear;
+}
+
+.btn-back-two {
+    opacity: 1;
+    position: absolute;
+    border-radius: 25px;
+    width: 132.66px;
+    height: 40.31;
+    z-index: -2;
+    background: linear-gradient(to bottom, #e23636, #000000);
+    /* transition: opacity 1.5s linear; */
+    transition: opacity .5s linear;
+}
