@@ -1,0 +1,86 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+    <title>Random Marvel Character</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/color-thief/2.3.0/color-thief.umd.js" defer></script>
+    <script src="script.js" defer></script>
+</head>
+<body id="bod">
+    <div class="container">
+        <div class="info-container">
+            <div class="pic-container">
+                <img id="charimg" src="" alt="">
+            </div>
+            <div class="description-container">
+                <div class="name-container">
+                    <h1 id="heroname"></h1>
+                </div>
+                <div class="about-container">
+                    <p id="about"></p>
+                </div>
+                <div class="get-more-container">
+                    <div class="wiki-container">
+                        <a id="wiki" target=”_blank” href="#"><h2>WIKI</h2></a>
+                    </div>
+                    <div class="more-comics-container">
+                        <a id="moreComics" target=”_blank” href="#"><h2>COMICS</h2></a>
+                    </div>
+                    <div class="btn-container">
+                        <button onclick="GetChar()">NEW CHARACTER</button>
+                        <div id="buttonbackone" class="btn-back-one"></div>
+                        <div id="buttonbacktwo" class="btn-back-two"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="comics-container">
+            <div class="ind-comics-container">
+                <div class="title-container">
+                    <h2>RANDOM COMICS</h1>
+                </div>
+                <div class="comic-container">
+                    <img comic-img src="" alt="">
+                    <a comic-link target=”_blank” href="#"><h2 comic-title></h2></a>
+                </div>
+                <div class="comic-container">
+                    <img comic-img src="" alt="">
+                    <a comic-link target=”_blank” href="#"><h2 comic-title></h2></a>
+                </div>
+                <div class="comic-container">
+                    <img comic-img src="" alt="">
+                    <a comic-link target=”_blank” href="#"><h2 comic-title></h2></a>
+                </div>
+                <div class="comic-container">
+                    <img comic-img src="" alt="">
+                    <a comic-link target=”_blank” href="#"><h2 comic-title></h2></a>
+                </div>
+            </div>
+            <div class="events-container">
+                <div class="title-container">
+                    <h2>RANDOM SERIES</h1>
+                </div>
+                <div class="comic-container">
+                    <img series-img src="" alt="">
+                    <a series-link target=”_blank” href="#"><h2 series-title></h2></a>
+                </div>
+                <div class="comic-container">
+                    <img series-img src="" alt="">
+                    <a series-link target=”_blank” href="#"><h2 series-title></h2></a>
+                </div>
+                <div class="comic-container">
+                    <img series-img src="" alt="">
+                    <a series-link target=”_blank” href="#"><h2 series-title></h2></a>
+                </div>
+                <div class="comic-container">
+                    <img series-img src="" alt="">
+                    <a series-link target=”_blank” href="#"><h2 series-title>7</h2></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="background" class="back"></div>
+</body>
+</html>
